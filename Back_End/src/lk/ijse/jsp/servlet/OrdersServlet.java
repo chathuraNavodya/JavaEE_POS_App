@@ -23,7 +23,7 @@ public class OrdersServlet extends HttpServlet {
         try {
             resp.addHeader("Access-Control-Allow-Origin", "*");
 
-           
+            Connection connection = DBConnection.getDBConnection().getConnection();
             PreparedStatement pstm = connection.prepareStatement("SELECT\n" +
                     "    o.orderID,\n" +
                     "    o.date,\n" +
