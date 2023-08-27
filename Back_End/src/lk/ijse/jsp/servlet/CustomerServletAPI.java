@@ -24,7 +24,9 @@ public class CustomerServletAPI extends HttpServlet {
 
             JsonArrayBuilder allCustomers = Json.createArrayBuilder();
             while (rst.next()) {
-                
+                String id = rst.getString(1);
+                String name = rst.getString(2);
+                String address = rst.getString(3);
 
                 JsonObjectBuilder customerObject = Json.createObjectBuilder();
                 customerObject.add("id", id);
