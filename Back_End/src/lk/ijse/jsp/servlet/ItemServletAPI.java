@@ -54,7 +54,7 @@ public class ItemServletAPI extends HttpServlet {
         String code = req.getParameter("code");
         String itemName = req.getParameter("description");
         String qty = req.getParameter("qty");
-        String unitPrice = req.getParameter("unit");
+        String unitPrice = req.getParameter("unitPrice");
 
         resp.addHeader("Content-Type", "application/json");
         resp.addHeader("Access-Control-Allow-Origin", "*");
