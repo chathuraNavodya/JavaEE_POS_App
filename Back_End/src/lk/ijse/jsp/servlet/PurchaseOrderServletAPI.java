@@ -80,7 +80,7 @@ public class PurchaseOrderServletAPI extends HttpServlet {
                 resp.setStatus(400);
             }
 
-            connection.setAutoCommit(false);
+            connection.setAutoCommit(true);
 
         } catch (ClassNotFoundException e) {
             showMessage(resp, e.getMessage(), "error", "[]");
